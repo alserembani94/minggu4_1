@@ -6,6 +6,12 @@
 
 body {
   min-height: 100vh;
+
+  --primary: #3898F9;
+}
+
+.dark {
+  --primary: #2866B1;
 }
 
 .center {
@@ -54,8 +60,26 @@ input {
 button {
   border: none;
   border-radius: 8px;
-  padding: 8px;
+  padding: 8px 16px;
   background-color: #3898F9;
   color: #ffffff;
   cursor: pointer;
+
+  transition: background-color 0.2s ease-in-out;
 }
+
+button:hover {
+  background-color: burlywood;
+}
+
+/* @media (max-width: 768px) {
+  body {
+    background-color: black;
+  }
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+} */
